@@ -9,21 +9,9 @@
   <link rel="icon" type="image/png" href="images/dolibarr.png" />
   <link rel="stylesheet" href="themes/vue.css">
   <style>
-    :root {
-      --base-font-size: 14px;
-      --theme-color: #0074d9;
-      --link-color:  #0074d9;
-      --link-color--hover: #0074d9;
-      /*--cover-background-color: #0074d9;*/
-      /*--cover-heading-color: #fff;*/
-      --cover-heading-font-size-max: 0px;
-      /*--sidebar-nav-link-before-content-l3: ;*/
-    }
-    .content {
-      padding-top: 60px;
-    }
-    .task-list-item input {
-      vertical-align: middle;
+    .markdown-section > p:first-child > a {
+      display: block;
+      text-align: right;
     }
   </style>
 </head>
@@ -32,6 +20,7 @@
   <script>
     window.$docsify = {
       name: '<img src="images/dolibarr.png" height="100px">',
+      repo: 'https://github.com/AXeL-dev/dolibarr-modules-docs',
       loadNavbar: true,
       loadSidebar: true,
       // alias: {
@@ -71,7 +60,28 @@
           '/fr/': 'Copié',
           '/': 'Copied'
         }
-      }
+      },
+      plugins: [
+        function (hook, vm) {
+          hook.beforeEach(function (html) {
+            if (/githubusercontent\.com/.test(vm.route.file)) {
+              url = vm.route.file
+                .replace('raw.githubusercontent.com', 'github.com')
+                .replace(/\/master/, '/blob/master')
+            } else {
+              url = 'https://github.com/AXeL-dev/dolibarr-modules-docs/blob/master/' + vm.route.file
+            }
+            //console.log(vm)
+            var lang = '/' + vm.route.path.split('/')[1] + '/'
+            var editText = {
+              '/fr/': 'Modifier le document',
+              '/': 'Edit Document'
+            }
+            var editHtml = '[:memo: ' + editText[(editText[lang] ? lang : '/')] + '](' + url + ' \':id=edit\')\n'
+            return editHtml + html
+          })
+        }
+      ]
     }
   </script>
   <script src="lib/docsify.min.js"></script>
