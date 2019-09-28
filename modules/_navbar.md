@@ -1,0 +1,3 @@
+- Translations
+  - [:us: English](/modules/introduction)
+  - [:fr: French](/fr/modules/introduction)

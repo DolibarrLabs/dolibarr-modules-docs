@@ -1,0 +1,3 @@
+- Translations
+  - [:us: English](/modules/damb/doc)
+  - [:fr: French](/fr/modules/damb/doc)
