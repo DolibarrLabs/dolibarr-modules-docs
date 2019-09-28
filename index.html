@@ -1,0 +1,86 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Documentation</title>
+  <link rel="icon" type="image/png" href="images/dolibarr.png" />
+  <link rel="stylesheet" href="themes/vue.css">
+  <style>
+    :root {
+      --base-font-size: 14px;
+      --theme-color: #0074d9;
+      --link-color:  #0074d9;
+      --link-color--hover: #0074d9;
+      /*--cover-background-color: #0074d9;*/
+      /*--cover-heading-color: #fff;*/
+      --cover-heading-font-size-max: 0px;
+      /*--sidebar-nav-link-before-content-l3: ;*/
+    }
+    .content {
+      padding-top: 60px;
+    }
+    .task-list-item input {
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">Loading ...</div>
+  <script>
+    window.$docsify = {
+      name: '<img src="images/dolibarr.png" height="100px">',
+      loadNavbar: true,
+      loadSidebar: true,
+      // alias: {
+      //   '/.*/_sidebar.md': '/_sidebar.md'
+      // },
+      //routerMode: 'history', // default: 'hash'
+      themeColor: '#0074d9',
+      subMaxLevel: 3,
+      auto2top: true,
+      search: {
+        maxAge: 86400000, // Expiration time, the default one day
+        //paths: [], // or 'auto'
+        placeholder: {
+          '/fr/': 'Rechercher',
+          '/': 'Search'
+        },
+        noData: {
+          '/fr/': 'Aucun résultat!',
+          '/': 'No results!'
+        },
+      },
+      pagination: {
+        previousText: '',
+        nextText: '',
+        //crossChapter: true
+      },
+      copyCode: {
+        buttonText : {
+          '/fr/': 'Copier dans le presse-papier',
+          '/': 'Copy to clipboard'
+        },
+        errorText  : {
+          '/fr/': 'Erreur',
+          '/': 'Error'
+        },
+        successText: {
+          '/fr/': 'Copié',
+          '/': 'Copied'
+        }
+      }
+    }
+  </script>
+  <script src="lib/docsify.min.js"></script>
+  <script src="lib/search.min.js"></script>
+  <script src="lib/zoom-image.min.js"></script>
+  <script src="lib/docsify-pagination.min.js"></script>
+  <script src="lib/docsify-copy-code.min.js"></script>
+  <!-- <script src="lib/docsify-themeable.min.js"></script> -->
+  <script src="lib/emoji.min.js"></script>
+  <script src="lib/prism-php.min.js"></script>
+</body>
+</html>
