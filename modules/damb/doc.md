@@ -23,7 +23,9 @@ The structure or the skeleton of a module looks like this:
 
 ### Generate the skeleton of the module
 
-To generate an empty module skeleton, you can either do it yourself (by creating folders and files by hand) or you can use a module generator like [damb](https://www.dolistore.com/en/modules/1121-Advanced-Module-Builder.html), so just install it like any module and activate it, then go to the module creation page (see the images below).
+To generate an empty module skeleton, you can either do it yourself (by creating folders and files by hand) or you can use a module builder like [damb](https://www.dolistore.com/en/modules/1121-Advanced-Module-Builder.html), so just install it like any module and activate it, then go to the module creation page (see the images below).
+
+!> Only a user with administrator privileges can view & use this module.
 
 ![damb](../../images/damb/damb.png)
 
@@ -79,8 +81,14 @@ Another way to do this would be to use damb to delete it, so just click on the *
 
 ![damb_edit_all_modules](../../images/damb/damb_edit_all_modules.png)
 
-You will see a list of all available plugins in the htdocs/custom folder. Then delete the module you want by using the delete icon on the right of each module.
+You will see a list of all available modules in the htdocs/custom folder. Then delete the module you want by using the delete icon on the right of each module.
 
 ![damb_delete_module](../../images/damb/damb_delete_module.png)
 
 ?> If you do not see a delete icon next to the module name, please enable "delete modules" option in damb's configuration page.
+
+## Configuration
+
+As any module, damb has a configuration page where you can set different configuration options.
+
+![damb_config](../../images/damb/damb_config.png)

@@ -25,6 +25,8 @@ La structure ou bien le squelette d'un module ressemble à ceci:
 
 Pour générer un squelette vide de module, soit vous le faites par vous même (en créant les dossiers et fichiers à la main) ou bien vous pouvez utiliser un générateur de module. C'est d'ailleurs içi que [damb](https://www.dolistore.com/fr/modules/1121-Constructeur-de-modules-avanc--.html) entre en jeu, il suffit de l'installer tout comme n'importe quel module et de l'activer, puis d'aller sur la page de création de module (voir les images en dessous).
 
+!> Ce module ne peut être consulté ou utilisé que par un utilisateur disposant de privilèges d'administrateur.
+
 ![damb](../../../images/damb/damb.png)
 
 ![damb_new_module](../../../images/damb/damb_new_module.png)
@@ -84,3 +86,9 @@ Vous verrez une liste de tout les modules externes disponibles dans le dossier h
 ![damb_delete_module](../../../images/damb/damb_delete_module.png)
 
 ?> Si vous ne voyez pas d'icône supprimer à coté du nom des modules, veuillez autoriser la suppression des modules depuis la page de configuration du module damb.
+
+## Configuration
+
+Comme tout module, damb dispose d'une page de configuration où vous pouvez définir les différentes options de configuration de ce dernier.
+
+![damb_config](../../../images/damb/damb_config.png)
