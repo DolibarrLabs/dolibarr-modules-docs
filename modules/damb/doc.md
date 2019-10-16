@@ -71,7 +71,7 @@ To view the page you just created, just click on the **Preview** button on the r
 
 All you have to do now is to modify the source code of the page and write your own PHP code on it.
 
-?> **Note**: damb will not do everything for you, it is just there to help you get started, so you will always need to dive into the Dolibarr ecosystem and understand how the core modules work to get a better understanding.
+?> **Note**: damb will not do everything for you, it is just there to help you get started, so you will always need to dive into the Dolibarr ecosystem and see how the core modules work to get a better understanding.
 
 ## Delete a module
 
